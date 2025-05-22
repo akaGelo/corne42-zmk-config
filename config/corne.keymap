@@ -49,10 +49,10 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp CAPSLOCK  &trans  &trans  &trans  &kp BACKSPACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &trans         &trans
-                        &trans  &trans  &trans    &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp K_APP       &kp END        &kp HOME      &trans           &kp PRINTSCREEN  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT_ARROW  &kp DOWN       &kp UP_ARROW  &kp RIGHT_ARROW  &kp BACKSPACE    &kp DELETE
+&trans  &trans  &trans  &trans  &trans  &trans    &kp CAPS        &kp PAGE_DOWN  &kp PAGE_UP   &trans           &trans           &trans
+                        &trans  &trans  &trans    &trans          &trans         &trans
             >;
         };
     };
