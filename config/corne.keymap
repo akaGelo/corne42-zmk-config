@@ -162,6 +162,7 @@
         };
 
         // i3 window management macros
+
         win_h: win_h {
             label = "win_h";
             compatible = "zmk,behavior-macro";
@@ -230,13 +231,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&kp LSHFT>,
+                <&kp LEFT_WIN &kp LSHFT>,
                 <&macro_tap>,
                 <&kp H>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&kp LEFT_WIN>;
+                <&kp LSHFT &kp LEFT_WIN>;
         };
 
         win_shift_j: win_shift_j {
@@ -247,13 +246,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&kp LSHFT>,
+                <&kp LEFT_WIN &kp LSHFT>,
                 <&macro_tap>,
                 <&kp J>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&kp LEFT_WIN>;
+                <&kp LSHFT &kp LEFT_WIN>;
         };
 
         win_shift_k: win_shift_k {
@@ -264,13 +261,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&kp LSHFT>,
+                <&kp LEFT_WIN &kp LSHFT>,
                 <&macro_tap>,
                 <&kp K>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&kp LEFT_WIN>;
+                <&kp LSHFT &kp LEFT_WIN>;
         };
 
         win_shift_l: win_shift_l {
@@ -281,13 +276,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&kp LSHFT>,
+                <&kp LEFT_WIN &kp LSHFT>,
                 <&macro_tap>,
                 <&kp L>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&kp LEFT_WIN>;
+                <&kp LSHFT &kp LEFT_WIN>;
         };
 
         win_q: win_q {
@@ -448,13 +441,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&kp LSHFT>,
+                <&kp LEFT_WIN &kp LSHFT>,
                 <&macro_tap>,
                 <&kp C>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&kp LEFT_WIN>;
+                <&kp LSHFT &kp LEFT_WIN>;
         };
 
         win_shift_r: win_shift_r {
@@ -465,13 +456,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&kp LSHFT>,
+                <&kp LEFT_WIN &kp LSHFT>,
                 <&macro_tap>,
                 <&kp R>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&kp LEFT_WIN>;
+                <&kp LSHFT &kp LEFT_WIN>;
         };
 
         win_shift_e: win_shift_e {
@@ -482,13 +471,11 @@
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_WIN>,
-                <&kp LSHFT>,
+                <&kp LEFT_WIN &kp LSHFT>,
                 <&macro_tap>,
                 <&kp E>,
                 <&macro_release>,
-                <&kp LSHFT>,
-                <&kp LEFT_WIN>;
+                <&kp LSHFT &kp LEFT_WIN>;
         };
 
         win_escape: win_escape {
@@ -597,7 +584,7 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&kp GRAVE  &kp N1           &kp N2       &kp N3    &kp N4          &kp N5             &kp N6            &kp N7             &kp N8         &kp N9                &kp N0                 &none
+&kp GRAVE  &kp N1           &kp N2       &kp N3    &kp N4          &kp N5             &kp N6            &kp N7             &kp N8         &kp N9                &kp N0                 &kp INSERT
 &none      &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR      &kp PERCENT        &kp CARET         &kp AMPERSAND      &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
 &trans     &kp EQUAL        &kp MINUS    &kp PLUS  &kp LEFT_BRACE  &kp RIGHT_BRACE    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN  &kp GREATER_THAN      &kp SLASH              &mt RIGHT_SHIFT PIPE
                                          &trans    &trans          &trans             &trans            &trans             &trans
@@ -627,10 +614,10 @@
             //                    |     |     |WRET |   |WSPC |     |     |
 
             bindings = <
-&win_escape  &win_1  &win_2  &win_3  &win_4  &win_5         &win_6     &win_7  &win_8  &win_9  &win_0  &none
-&win_tab     &none   &none   &win_d  &win_f  &none          &win_h     &win_j  &win_k  &win_l  &none   &none
-&trans       &none   &none   &win_c  &win_v  &none          &none      &win_m  &none   &win_q  &win_r  &trans
-                             &trans  &trans  &win_return    &win_space &trans  &trans
+&win_escape  &win_1  &win_2  &win_3  &win_4  &win_5         &win_6      &win_7  &win_8  &win_9  &win_0  &none
+&win_tab     &none   &none   &win_d  &win_f  &none          &win_h      &win_j  &win_k  &win_l  &none   &none
+&trans       &none   &none   &win_c  &win_v  &none          &none       &win_m  &none   &win_q  &win_r  &trans
+                             &trans  &trans  &win_return    &win_space  &trans  &trans
             >;
         };
 
@@ -642,10 +629,10 @@
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&none   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &out OUT_TOG    &none   &none   &none   &none   &none   &none
-&none   &none         &none         &none         &none         &none           &none   &none   &none   &none   &none   &none
-&trans  &none         &none         &none         &none         &none           &none   &none   &none   &none   &none   &trans
-                                    &trans        &trans        &trans          &trans  &trans  &trans
+&none   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR  &out OUT_TOG    &none   &none   &none   &none  &none  &none
+&none   &none         &none         &none         &none       &none           &none   &none   &none   &none  &none  &none
+&trans  &none         &none         &none         &none       &none           &none   &none   &none   &none  &none  &trans
+                                    &trans        &trans      &trans          &trans  &trans  &trans
             >;
         };
     };
