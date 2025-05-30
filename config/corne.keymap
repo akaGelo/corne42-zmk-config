@@ -622,14 +622,14 @@
         layer_win {
             // -----------------------------------------------------------------------------------------
             // |WESC  | W+1 | W+2 | W+3 | W+4 | W+5 |   | W+6 | W+7 | W+8 | W+9 | W+0 |     |
-            // |WTAB  |  -  |  -  | W+D |  -  |  -  |   | W+H | W+J | W+K | W+L |  -  | W+Q |
-            // |      |     |     | W+C | W+V |     |   |     | W+M |     |     | W+R |     |
+            // |WTAB  |  -  |  -  | W+D |  -  |  -  |   | W+H | W+J | W+K | W+L |  -  |  -  |
+            // |      |     |     | W+C | W+V |     |   |     | W+M |     | W+Q | W+R |     |
             //                    |     |     |WRET |   |WSPC |     |     |
 
             bindings = <
 &win_escape  &win_1  &win_2  &win_3  &win_4  &win_5         &win_6     &win_7  &win_8  &win_9  &win_0  &win_f
-&win_tab     &none   &none   &win_d  &none   &none          &win_h     &win_j  &win_k  &win_l  &none   &win_q
-&trans       &none   &none   &win_c  &win_v  &none          &none      &win_m  &none   &none   &win_r  &trans
+&win_tab     &none   &none   &win_d  &none   &none          &win_h     &win_j  &win_k  &win_l  &none   &none
+&trans       &none   &none   &win_c  &win_v  &none          &none      &win_m  &none   &win_q  &win_r  &trans
                              &trans  &trans  &win_return    &win_space &trans  &trans
             >;
         };
