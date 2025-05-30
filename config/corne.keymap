@@ -10,6 +10,158 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        win_1: win_1 {
+            label = "win_1";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N1>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_2: win_2 {
+            label = "win_2";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N2>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_3: win_3 {
+            label = "win_3";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N3>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_4: win_4 {
+            label = "win_4";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N4>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_5: win_5 {
+            label = "win_5";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;к
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N5>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_6: win_6 {
+            label = "win_6";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N6>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_7: win_7 {
+            label = "win_7";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N7>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_8: win_8 {
+            label = "win_8";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N8>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_9: win_9 {
+            label = "win_9";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N9>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_0: win_0 {
+            label = "win_0";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;к
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp N0>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+    };
+
     behaviors {
         mt { tapping-term-ms = <250>; };
     };
@@ -25,7 +177,7 @@
             //                    | CTRL | LWR | RET |   | SPC | RSE  | ALT |
 
             bindings = <
-&kp ESC    &kp Q  &kp W  &kp E      &kp R  &kp T      &kp Y      &kp U  &kp I          &kp O    &kp P     &kp LBKT
+&lt 4 ESC  &kp Q  &kp W  &kp E      &kp R  &kp T      &kp Y      &kp U  &kp I          &kp O    &kp P     &kp LBKT
 &kp TAB    &kp A  &kp S  &kp D      &kp F  &kp G      &kp H      &kp J  &kp K          &kp L    &kp SEMI  &kp APOSTROPHE
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V  &kp B      &kp N      &kp M  &kp COMMA      &kp DOT  &kp FSLH  &kp RSHFT
                          &kp LCTRL  &mo 1  &kp RET    &kp SPACE  &mo 2  &kp RIGHT_ALT
@@ -64,16 +216,31 @@
 
         layer_win {
             // -----------------------------------------------------------------------------------------
-            // |  1   |  2  |  3  |  4  |  5  |  6  |   |  7  |  8  |  9  |  0  |     |     |
+            // | W+1  | W+2 | W+3 | W+4 | W+5 | W+6 |   | W+7 | W+8 | W+9 | W+0 |     |     |
             // |      |     |     |     |     |     |   |     |     |     |     |     |     |
             // |      |     |     |     |     |     |   |     |     |     |     |     |     |
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6     &kp N7  &kp N8  &kp N9  &kp N0  &none   &none
+&win_1  &win_2  &win_3  &win_4  &win_5  &win_6     &win_7  &win_8  &win_9  &win_0  &none   &none
 &none   &none   &none   &none   &none   &none      &none   &none   &none   &none   &none   &none
 &trans  &none   &none   &none   &none   &none      &none   &none   &none   &none   &none   &trans
                         &trans  &trans  &trans     &trans  &trans  &trans
+            >;
+        };
+
+        layer_settings {
+            // -----------------------------------------------------------------------------------------
+            // |      | BT1 | BT2 | BT3 | CLR | TOG |   |     |     |     |     |     |     |
+            // |      |     |     |     |     |     |   |     |     |     |     |     |     |
+            // |      |     |     |     |     |     |   |     |     |     |     |     |     |
+            //                    |     |     |     |   |     |     |     |
+
+            bindings = <
+&none   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR    &out OUT_TOG    &none   &none   &none   &none   &none   &none
+&none   &none         &none         &none         &none         &none           &none   &none   &none   &none   &none   &none
+&trans  &none         &none         &none         &none         &none           &none   &none   &none   &none   &none   &trans
+                                    &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
