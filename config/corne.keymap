@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             wait-ms = <40>;
-            tap-ms = <40>;к
+            tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp LEFT_WIN>,
@@ -150,13 +150,358 @@
             label = "win_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <40>;к
+            wait-ms = <40>;
             tap-ms = <40>;
             bindings =
                 <&macro_press>,
                 <&kp LEFT_WIN>,
                 <&macro_tap>,
                 <&kp N0>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        // i3 window management macros
+        win_h: win_h {
+            label = "win_h";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_j: win_j {
+            label = "win_j";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_k: win_k {
+            label = "win_k";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp K>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_l: win_l {
+            label = "win_l";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_shift_h: win_shift_h {
+            label = "win_shift_h";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp H>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_shift_j: win_shift_j {
+            label = "win_shift_j";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp J>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_shift_k: win_shift_k {
+            label = "win_shift_k";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp K>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_shift_l: win_shift_l {
+            label = "win_shift_l";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp L>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_q: win_q {
+            label = "win_q";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp Q>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_f: win_f {
+            label = "win_f";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp F>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_c: win_c {
+            label = "win_c";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_v: win_v {
+            label = "win_v";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp V>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_s: win_s {
+            label = "win_s";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_w: win_w {
+            label = "win_w";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp W>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_e: win_e {
+            label = "win_e";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_r: win_r {
+            label = "win_r";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_m: win_m {
+            label = "win_m";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp M>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_d: win_d {
+            label = "win_d";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp D>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_shift_c: win_shift_c {
+            label = "win_shift_c";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_shift_r: win_shift_r {
+            label = "win_shift_r";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp R>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_shift_e: win_shift_e {
+            label = "win_shift_e";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&kp LSHFT>,
+                <&macro_tap>,
+                <&kp E>,
+                <&macro_release>,
+                <&kp LSHFT>,
+                <&kp LEFT_WIN>;
+        };
+
+        win_escape: win_escape {
+            label = "win_escape";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp ESCAPE>,
                 <&macro_release>,
                 <&kp LEFT_WIN>;
         };
@@ -216,16 +561,16 @@
 
         layer_win {
             // -----------------------------------------------------------------------------------------
-            // | W+1  | W+2 | W+3 | W+4 | W+5 | W+6 |   | W+7 | W+8 | W+9 | W+0 |     |     |
-            // |      |     |     |     |     |     |   |     |     |     |     |     |     |
-            // |      |     |     |     |     |     |   |     |     |     |     |     |     |
+            // | W+1  | W+2 | W+3 | W+4 | W+5 | W+6 |   | W+7 | W+8 | W+9 | W+0 | W+Q | W+F |
+            // | W+D  | W+H | W+J | W+K | W+L | W+C |   | W+V | W+S | W+W | W+E | W+R | W+M |
+            // |WS+C  |WS+H |WS+J |WS+K |WS+L |WESC|   |     |     |     |     |WS+R |WS+E |
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&win_1  &win_2  &win_3  &win_4  &win_5  &win_6     &win_7  &win_8  &win_9  &win_0  &none   &none
-&none   &none   &none   &none   &none   &none      &none   &none   &none   &none   &none   &none
-&trans  &none   &none   &none   &none   &none      &none   &none   &none   &none   &none   &trans
-                        &trans  &trans  &trans     &trans  &trans  &trans
+&win_1       &win_2       &win_3       &win_4       &win_5       &win_6         &win_7  &win_8  &win_9  &win_0  &win_q  &win_f
+&win_d       &win_h       &win_j       &win_k       &win_l       &win_c         &win_v  &win_s  &win_w  &win_e  &win_r  &win_m
+&win_shift_c &win_shift_h &win_shift_j &win_shift_k &win_shift_l &win_escape    &none   &none   &none   &none   &win_shift_r &win_shift_e
+                                       &trans       &trans       &trans         &trans  &trans  &trans
             >;
         };
 
