@@ -505,6 +505,21 @@
                 <&macro_release>,
                 <&kp LEFT_WIN>;
         };
+
+        win_a: win_a {
+            label = "win_a";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <40>;
+            tap-ms = <40>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp A>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+        };
     };
 
     behaviors {
@@ -561,16 +576,16 @@
 
         layer_win {
             // -----------------------------------------------------------------------------------------
-            // | W+1  | W+2 | W+3 | W+4 | W+5 | W+6 |   | W+7 | W+8 | W+9 | W+0 | W+Q | W+F |
-            // | W+D  | W+H | W+J | W+K | W+L | W+C |   | W+V | W+S | W+W | W+E | W+R | W+M |
-            // |WS+C  |WS+H |WS+J |WS+K |WS+L |WESC|   |     |     |     |     |WS+R |WS+E |
+            // |WESC  | W+1 | W+2 | W+3 | W+4 | W+5 |   | W+6 | W+7 | W+8 | W+9 | W+0 |     |
+            // |  -   | W+Q |  -  | W+D |  -  |  -  |   | W+H | W+J | W+K | W+L |  -  |  -  |
+            // |      |     |     |     |     |     |   | W+F | W+M |     |     |     |     |
             //                    |     |     |     |   |     |     |     |
 
             bindings = <
-&win_1       &win_2       &win_3       &win_4       &win_5       &win_6         &win_7  &win_8  &win_9  &win_0  &win_q  &win_f
-&win_d       &win_h       &win_j       &win_k       &win_l       &win_c         &win_v  &win_s  &win_w  &win_e  &win_r  &win_m
-&win_shift_c &win_shift_h &win_shift_j &win_shift_k &win_shift_l &win_escape    &none   &none   &none   &none   &win_shift_r &win_shift_e
-                                       &trans       &trans       &trans         &trans  &trans  &trans
+&win_escape  &win_1  &win_2  &win_3  &win_4  &win_5     &win_6  &win_7  &win_8  &win_9  &win_0  &none
+&none        &win_q  &none   &win_d  &none   &none      &win_h  &win_j  &win_k  &win_l  &none   &none
+&trans       &none   &none   &none   &none   &none      &win_f  &win_m  &none   &none   &none   &trans
+                             &trans  &trans  &trans     &trans  &trans  &trans
             >;
         };
 
